@@ -68,15 +68,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JMZ-g9-yc2">
-                                <rect key="frame" x="183" y="466" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JMZ-g9-yc2">
+                                <rect key="frame" x="182.5" y="478.5" width="51" height="31"/>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Event " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayQ-cR-sOF">
+                                <rect key="frame" x="153" y="376.5" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgD-Ue-ixe">
+                                <rect key="frame" x="161.5" y="549.5" width="91" height="30"/>
+                                <state key="normal" title="Submit RSVP"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The event is set for " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1t-qy-Z6d">
+                                <rect key="frame" x="98.5" y="339.5" width="217.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="PgD-Ue-ixe" firstAttribute="centerX" secondItem="hgT-ni-BMk" secondAttribute="centerX" id="Ce4-K0-MFj"/>
                             <constraint firstItem="h0S-0b-eSL" firstAttribute="centerX" secondItem="hgT-ni-BMk" secondAttribute="centerX" id="Iei-1T-3NU"/>
+                            <constraint firstItem="PgD-Ue-ixe" firstAttribute="top" secondItem="JMZ-g9-yc2" secondAttribute="bottom" constant="40" id="Mk2-bd-XPl"/>
+                            <constraint firstItem="JMZ-g9-yc2" firstAttribute="centerX" secondItem="hgT-ni-BMk" secondAttribute="centerX" id="TgI-QS-GGU"/>
                             <constraint firstItem="h0S-0b-eSL" firstAttribute="centerY" secondItem="hgT-ni-BMk" secondAttribute="centerY" id="aih-8s-Yec"/>
+                            <constraint firstItem="ayQ-cR-sOF" firstAttribute="centerX" secondItem="hgT-ni-BMk" secondAttribute="centerX" id="dLy-DU-Std"/>
+                            <constraint firstItem="JMZ-g9-yc2" firstAttribute="top" secondItem="h0S-0b-eSL" secondAttribute="bottom" constant="20" id="f4V-Ku-vFf"/>
+                            <constraint firstItem="ayQ-cR-sOF" firstAttribute="top" secondItem="f1t-qy-Z6d" secondAttribute="bottom" constant="8" id="gXn-7q-KoG"/>
+                            <constraint firstItem="f1t-qy-Z6d" firstAttribute="centerX" secondItem="hgT-ni-BMk" secondAttribute="centerX" id="gpZ-9Y-ejy"/>
+                            <constraint firstItem="h0S-0b-eSL" firstAttribute="top" secondItem="ayQ-cR-sOF" secondAttribute="bottom" constant="40" id="hFI-Jc-Hvi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vYG-yz-Qsr"/>
                     </view>
