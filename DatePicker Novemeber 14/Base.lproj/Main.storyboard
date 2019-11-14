@@ -26,6 +26,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uci-2g-ejP">
                                 <rect key="frame" x="161" y="596" width="92" height="30"/>
                                 <state key="normal" title="Create Event "/>
+                                <connections>
+                                    <segue destination="9Tj-YB-l4w" kind="show" id="BcN-ho-bj5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSVP NO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbz-uY-B38">
                                 <rect key="frame" x="171" y="634" width="72" height="21"/>
@@ -103,6 +106,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vYG-yz-Qsr"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HEg-Nb-gOl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UxK-Gc-H4S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
